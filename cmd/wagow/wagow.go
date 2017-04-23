@@ -23,14 +23,10 @@ func main() {
 	// middlewares before and after router.
 	e := echo.New()
 
-	// e.Pre(middleware.HTTPSRedirect())
 	e.Use(middleware.Recover())
 	e.Use(middleware.Logger())
 
 	e.Logger.SetLevel(log.INFO)
-
-	// e.AutoTLSManager.HostPolicy = autocert.HostWhitelist("wi2l.me")
-	// e.AutoTLSManager.Cache = autocert.DirCache(".")
 
 	e.POST("/", handler)
 
