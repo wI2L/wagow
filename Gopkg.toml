@@ -1,0 +1,8 @@
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/labstack/echo"
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/labstack/gommon"
